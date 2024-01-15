@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         #profile-pic {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-style: groove;
+            border-width: 10px;
+            border-color: crimson;
+        }
+         @keyframes blink {
+            0% {
+                color:cornflowerblue;
+            }
+
+            50% {
+                color: darkblue;
+            }
+
+            100% {
+                color:crimson;
+            }
+        }
+        .blinking-text {
+            
+            
+            animation: blink 3s infinite;
+            
+        }
+        body {
+            font-family:'Courier New', Courier, monospace;
+            margin: 20px;
+            padding: 20px;
+            background-color:seashell;
+            
+            border:5px solid black;
+            border-style: groove;
+        }
+
+        h1 {
+            color: #333;
+            
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        p {
+            color: #777;
+        }
+
+        #intro {
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        .important-info {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: larger;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .a{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+   
+
+    </style>
+    </head>
+    <body>
+        <img id="profile-pic" src="curls.jpg" alt="Profile Picture">
+        <h1 class="blinking-text">Who am I?</h1>
+    
+        
+        <p id="intro"><b>Hello! I am Niketana<span style='font-size:20px;'>&#9808;</span>, 
+            a passionate individual eager to explore the world of web development.</b></p>
+            <p style="font-family: cursive;"><b>"Don't compare yourself to anyone in this world,<br>
+            if you do so you are hurting yourself.<br>
+        Just treat yourself how you would treat your bestfriend.."<br>
+    -me</b></p>
+        
+        <table>
+            
+            <tr>
+                <th><b>Skills::</b><br>
+                <ol style="list-style-type:circle; color: crimson;">
+                    <li>java</li><br>
+                    <li>c programming</li><br>
+                    <li>html</li><br>
+                    <li>css</li><br>
+                    <li>javascript</li><br>
+                    <li>python</li>
+                </ol>
+                </th>
+                <th><b>Education::</b><br>
+                <ol style="list-style-type: disc;color:blueviolet;">
+                <li>BE in ise(msrit)</li><br>
+                <li>10th(cluny convent)</li><br>
+                <li>12th(vidyamandir)</li><br>
+                </ol></th>
+                
+            </tr>
+            <tr>
+                <td><b>My interests::</b><br>
+                    <ol style="list-style-type: square;color:darkblue"><b>
+                <li>basketball, badminton(sports)</li><br>
+                <li>books(fiction)</li><br>
+                <li>movies(thrillers)</li><br>
+                <li>anime</li><br>
+                <li>dogs</li><br>
+                <li>waffles</li><br>
+                <li>icecreams</li><br>
+            </b>  </ol>
+                </td>
+                <td><b>Projects::</b><br>
+                
+                    <p><a href="https://nikes303.github.io/QuizFiesta/tn.html">Quiz</a></p><br>
+                    <button onclick="alert('Thanks for visiting my profile!')">: D</button>
+                
+                </td>
+                
+            </tr>
+           </table>
+           <ul class="a">
+            <li><a href="https://github.com/nikes303"><i class="fa fa-github" style="font-size:30px;"></i></a></li>
+            <li><a href="https://www.instagram.com/ch_nikes/?hl=en"><i class="fa fa-instagram"style="font-size:30px;"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/niketana-l-81613a2aa/"><i class="fa fa-linkedin"style="font-size:30px;"></i></a></li>
+        </ul>
+        </body>
+</html>
